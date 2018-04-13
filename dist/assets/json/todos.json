@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "text": "vueの勉強",
+      "completed": false
+    },
+    {
+      "text": "reactの勉強",
+      "completed": false
+    },
+    {
+      "text": "angularの勉強",
+      "completed": false
+    },
+    {
+      "text": "backboneの勉強",
+      "completed": true
+    },
+    {
+      "text": "jqueryの勉強",
+      "completed": true
+    }
+  ]
+}
