@@ -1,0 +1,11 @@
+{
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "max-len": ["error", 1000],
+    "no-underscore-dangle": ["error", { "allow": ["__REDUX_DEVTOOLS_EXTENSION__"]}]
+  }
+}
