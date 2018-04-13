@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchTodos } from '../actions';
+import { asyncFetchTodos } from '../actions';
 
 import TodoList from '../components/TodoList';
 
@@ -9,13 +9,12 @@ const filter = (todos, isCompleted = true) => {
 };
 
 const mapStateToProps = state => ({
-  todos: state.todos,
   new_todos: filter(state.todos, false),
   done_todos: filter(state.todos, true),
 });
 
 const mapDispatchToProps = dispatch => ({
-  fetchTodos: todos => dispatch(fetchTodos(todos)),
+  asyncFetchTodos: todos => dispatch(asyncFetchTodos(todos)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
